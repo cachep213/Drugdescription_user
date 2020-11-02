@@ -1,0 +1,14 @@
+node_modules
+
+public
+
+dist
+.cache
+virtual
+web/node_modules
+web/node_modules
+web/public
+web/.babelrc
+web/dist
+web/.cache
+web/virtua

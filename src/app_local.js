@@ -465,9 +465,10 @@ class load_and_show{
   async load_img(){
    
     let img_count;
+    window.web3 = new Web3(window.ethereum)
     const web3 = window.web3
     // Network ID
-    const networkId = await web3.eth.net.getId()
+    // const networkId = await web3.eth.net.getId()
     // const networkData = Gymmarketplace.networks[networkId]
     // if(networkData) {
       const gymmarketplace = new web3.eth.Contract(Gymmarketplace.abi, contract_add_kovan)
@@ -541,12 +542,13 @@ class load_and_show{
   async function loaddrugData() {
 
     let drug_Cout;
-    
+    window.web3 = new Web3(window.ethereum)
     const web3 = window.web3
+
     // // Load account
     const accounts = await web3.eth.getAccounts()
     // Network ID
-    const networkId = await web3.eth.net.getId()
+    // const networkId = await web3.eth.net.getId()
     // const networkData = Gymmarketplace.networks[networkId]
     // if(networkData) {
       const gymmarketplace = new web3.eth.Contract(Gymmarketplace.abi,contract_add_kovan)
